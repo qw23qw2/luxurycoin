@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About neblio</source>
-        <translation>O neblioe</translation>
+        <source>About luxurycoin</source>
+        <translation>O luxurycoine</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;neblio&lt;/b&gt; version</source>
-        <translation>verzia &lt;b&gt;nebliou&lt;/b&gt;</translation>
+        <source>&lt;b&gt;luxurycoin&lt;/b&gt; version</source>
+        <translation>verzia &lt;b&gt;luxurycoinu&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Neblio developers</source>
+Copyright © 2017 The LuxuryCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Neblio developers</translation>
+Copyright © 2017 The LuxuryCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your neblio addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše neblio adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your luxurycoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše luxurycoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a neblio address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto neblio adresu</translation>
+        <source>Sign a message to prove you own a luxurycoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto luxurycoin adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified neblio address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou neblio adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified luxurycoin address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou luxurycoin adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-58"/>
-        <source>neblio will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
-        <translation>neblio sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
+        <source>luxurycoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
+        <translation>luxurycoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about neblio</source>
-        <translation>Zobraziť informácie o neblio</translation>
+        <source>Show information about luxurycoin</source>
+        <translation>Zobraziť informácie o luxurycoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-62"/>
-        <source>Send tokens to a neblio address</source>
-        <translation>Poslať mince na neblio adresu</translation>
+        <source>Send tokens to a luxurycoin address</source>
+        <translation>Poslať mince na luxurycoin adresu</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for neblio</source>
-        <translation>Upraviť možnosti konfigurácie pre neblio</translation>
+        <source>Modify configuration options for luxurycoin</source>
+        <translation>Upraviť možnosti konfigurácie pre luxurycoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-200"/>
-        <source>neblio</source>
-        <translation>neblio</translation>
+        <source>luxurycoin</source>
+        <translation>luxurycoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About neblio</source>
-        <translation>&amp;O neblio</translation>
+        <source>&amp;About luxurycoin</source>
+        <translation>&amp;O luxurycoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>neblio client</source>
-        <translation>neblio klient</translation>
+        <source>luxurycoin client</source>
+        <translation>luxurycoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to neblio network</source>
-        <translation><numerusform>%n aktívne spojenie s neblio sieťov</numerusform><numerusform>%n aktívnych spojení s neblio sieťov</numerusform><numerusform>%n aktívnych spojení s neblio sieťou</numerusform></translation>
+        <source>%n active connection(s) to luxurycoin network</source>
+        <translation><numerusform>%n aktívne spojenie s luxurycoin sieťov</numerusform><numerusform>%n aktívnych spojení s luxurycoin sieťov</numerusform><numerusform>%n aktívnych spojení s luxurycoin sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -658,8 +658,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid neblio address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou neblio adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid luxurycoin address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou luxurycoin adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -718,8 +718,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. neblio can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. neblio už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. luxurycoin can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. luxurycoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1052,8 +1052,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid neblio address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou neblio adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid luxurycoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou luxurycoin adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1071,8 +1071,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>neblio-Qt</source>
-        <translation>neblio-Qt</translation>
+        <source>luxurycoin-Qt</source>
+        <translation>luxurycoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1144,13 +1144,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start neblio after logging in to the system.</source>
-        <translation>Automaticky spustiť neblio po prihlásení sa do systému.</translation>
+        <source>Automatically start luxurycoin after logging in to the system.</source>
+        <translation>Automaticky spustiť luxurycoin po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start neblio on system login</source>
-        <translation>&amp;Spustiť neblio pri prihlásení do systému</translation>
+        <source>&amp;Start luxurycoin on system login</source>
+        <translation>&amp;Spustiť luxurycoin pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1169,8 +1169,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the neblio client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta neblio na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the luxurycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta luxurycoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1179,8 +1179,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the neblio network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti neblio cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the luxurycoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti luxurycoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1254,8 +1254,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting neblio.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní neblio.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting luxurycoin.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní luxurycoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1269,8 +1269,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show neblio addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť neblio adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show luxurycoin addresses in the transaction list or not.</source>
+        <translation>Či chcete zobraziť luxurycoin adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1316,8 +1316,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting neblio.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní neblio.</translation>
+        <source>This setting will take effect after restarting luxurycoin.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní luxurycoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the neblio network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou neblio po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the luxurycoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou luxurycoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1551,8 +1551,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the neblio-Qt help message to get a list with possible neblio command-line options.</source>
-        <translation>Zobraziť neblio-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku neblio.</translation>
+        <source>Show the luxurycoin-Qt help message to get a list with possible luxurycoin command-line options.</source>
+        <translation>Zobraziť luxurycoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku luxurycoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1571,13 +1571,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>neblio - Debug window</source>
-        <translation>neblio - Ladiace okno</translation>
+        <source>luxurycoin - Debug window</source>
+        <translation>luxurycoin - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>neblio Core</source>
-        <translation>Jadro neblio</translation>
+        <source>luxurycoin Core</source>
+        <translation>Jadro luxurycoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1586,8 +1586,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the neblio debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte neblio súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the luxurycoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte luxurycoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1596,8 +1596,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the neblio RPC console.</source>
-        <translation>Vitajte v konzole neblio RPC.</translation>
+        <source>Welcome to the luxurycoin RPC console.</source>
+        <translation>Vitajte v konzole luxurycoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1755,8 +1755,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte neblio adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte luxurycoin adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1855,8 +1855,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid neblio address</source>
-        <translation>UPOZORNENIE: Neplatná neblio adresa</translation>
+        <source>WARNING: Invalid luxurycoin address</source>
+        <translation>UPOZORNENIE: Neplatná luxurycoin adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1929,8 +1929,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte neblio adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte luxurycoin adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1990,8 +1990,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this neblio address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto neblio adresu</translation>
+        <source>Sign the message to prove you own this luxurycoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto luxurycoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2022,8 +2022,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified neblio address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou neblio adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified luxurycoin address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou luxurycoin adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2033,8 +2033,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte neblio adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte luxurycoin adresu (napr. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2043,8 +2043,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter neblio signature</source>
-        <translation>Zadajte neblio podpis</translation>
+        <source>Enter luxurycoin signature</source>
+        <translation>Zadajte luxurycoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2614,8 +2614,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>neblio version</source>
-        <translation>neblio verzia</translation>
+        <source>luxurycoin version</source>
+        <translation>luxurycoin verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2624,8 +2624,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nebliod</source>
-        <translation>Pošli príkaz na -server alebo nebliod</translation>
+        <source>Send command to -server or luxurycoind</source>
+        <translation>Pošli príkaz na -server alebo luxurycoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2644,13 +2644,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: neblio.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: neblio.conf)</translation>
+        <source>Specify configuration file (default: luxurycoin.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: luxurycoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nebliod.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: nebliod.pid)</translation>
+        <source>Specify pid file (default: luxurycoind.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: luxurycoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2674,8 +2674,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 6325 or testnet: 16325)</source>
-        <translation>Počúvať pripojenia na &lt;port&gt; (predvolené: 6325 alebo testovacia sieť: 16325)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 7539 or testnet: 17539)</source>
+        <translation>Počúvať pripojenia na &lt;port&gt; (predvolené: 7539 alebo testovacia sieť: 17539)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2734,8 +2734,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 6326 or testnet: 16326)</source>
-        <translation>Počúvajte pre JSON-RPC spojenie na &lt;port&gt; (predvolené: 6326 alebo testovaciasieť: 16326)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 7538 or testnet: 17538)</source>
+        <translation>Počúvajte pre JSON-RPC spojenie na &lt;port&gt; (predvolené: 7538 alebo testovaciasieť: 17538)</translation>
     </message>
     <message>
         <location line="-11"/>
@@ -2799,8 +2799,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong neblio will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny neblio nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong luxurycoin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny luxurycoin nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2989,24 +2989,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=nebliorpc
+rpcuser=luxurycoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;luxurycoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
  %s
 Je odporúčané použiť nasledujúce náhodné heslo:
-rpcuser=nebliorpc
+rpcuser=luxurycoinrpc
 rpcpassword=%s
 (Nemusíte si pamätať toto heslo)
 Užívateľské meno a heslo nesmú byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s oprávneniami súborov vlastníkov iba na čítatanie.
 Odporúča sa tiež nastaviť alertnotify, takže budete upozornení na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.com</translation>
+napríklad: alertnotify=echo %%s | mail -s &quot;luxurycoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3125,13 +3125,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  neblio is probably already running.</source>
-        <translation>Nemožno získať zámok na dátový adresár %s. neblio už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s.  luxurycoin is probably already running.</source>
+        <translation>Nemožno získať zámok na dátový adresár %s. luxurycoin už pravdepodobne beží.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>neblio</source>
-        <translation>neblio</translation>
+        <source>luxurycoin</source>
+        <translation>luxurycoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3165,13 +3165,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of neblio</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu neblio</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of luxurycoin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu luxurycoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart neblio to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte neblio k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart luxurycoin to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte luxurycoin k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3240,8 +3240,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. neblio is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. neblio je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. luxurycoin is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. luxurycoin je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-97"/>

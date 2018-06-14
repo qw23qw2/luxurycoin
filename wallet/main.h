@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2017 The Nebl.io developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -28,7 +29,7 @@ class CNode;
 
 class CTxMemPool;
 
-static const int LAST_POW_BLOCK = 1000;// 1000 PoW Blocks to kickstart
+static const int LAST_POW_BLOCK = 100;// 100 PoW Blocks to kickstart
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
@@ -52,10 +53,10 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 10 * CENT; // 10%
+static const int64_t COIN_YEAR_REWARD = 12 * CENT; // 12%
 
-static const uint256 hashGenesisBlock("0x7286972be4dbc1463d256049b7471c252e6557e222cab9be73181d359cd28bcc");
-static const uint256 hashGenesisBlockTestNet("0x7286972be4dbc1463d256049b7471c252e6557e222cab9be73181d359cd28bcc");
+static const uint256 hashGenesisBlock("0x45a4643aadcbb343c52b8baf9e983a77fe6e389f6bfb657d5205e6c5844d89a1");
+static const uint256 hashGenesisBlockTestNet("0x45a4643aadcbb343c52b8baf9e983a77fe6e389f6bfb657d5205e6c5844d89a1");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 10 * 60; } // up to 10 minutes in the future

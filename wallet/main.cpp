@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2017 The Nebl.io developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,7 +75,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Neblio Signed Message:\n";
+const string strMessageMagic = "LuxuryCoin Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
@@ -1026,17 +1027,17 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-            //Miner reward: 2000 coin for 500 Blocks = 1,000,000 coin
-            int64_t nSubsidy = 2000 * COIN;
+            //Miner reward: 20000 coin for 50 Blocks = 1,000,000 coin
+            int64_t nSubsidy = 20000 * COIN;
 
             if(nBestHeight == 0)
             {
-                //Total premine coin, after the first 501 blocks are mined there will be a total of 125,000,000
-                nSubsidy = 124000000 * COIN;
+                //Total premine coin, after the first 501 blocks are mined there will be a total of 100,000,000
+                nSubsidy = 99000000 * COIN;
             }
 
-            // 0 reward for PoW blocks after 500
-            if(nBestHeight > 500)
+            // 0 reward for PoW blocks after block 50
+            if(nBestHeight > 50)
             {
                 nSubsidy = 0;
 
@@ -1053,7 +1054,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     //CBlockLocator locator;
 
-    int64_t nRewardCoinYear = COIN_YEAR_REWARD; //10% reward up to end
+    int64_t nRewardCoinYear = COIN_YEAR_REWARD; //12% reward up to end
 
     printf("Block Number %d \n",nBestHeight);
 
@@ -2629,7 +2630,7 @@ bool CheckDiskSpace(uint64_t nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "neblio", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "luxurycoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2696,14 +2697,14 @@ bool LoadBlockIndex(bool fAllowNew)
         pchMessageStart[2] = 0x63;
         pchMessageStart[3] = 0xc5;
 
-        bnTrustedModulus.SetHex("bee2a4e394e8d268702b94138c5659130ac83b6d93fe6940cb0738384b18366ce1f3ca05624c3dbd89f8eac83d5f95706a26faeff38efc560f0bf22d31a9828d454a79a35b5abf892635f37637fba3c0358df3fe204066e42075ae079f45296c520b942dfbb030c17c95da6ac60870a614df5def2324f710a61df35d83993f3cc38b7252a79732282b7ae12fe5edfcdb87f0e980d1b1dc0d1881708f2ff95f416c339b1ff513bf70555df587b98dfd7a122c9bb1e7ac81b665101f23f172a1c2159d630f429934abcb41c7659ff86a862b39086f4bf8263ae52d6e3c21ff92fd5d3984197b5683fb41c3bdbc8aa07e5db0041dce17b2bd8b929d09c0d3af58bc6920cfa55b187cc6486d805ed8c244250637eab0f7e8143f0af6b2f6a9e7a7253e8fd805ae5eab3b4540b0ec6768ec883ee38ae57e8e4e023f35bd640d91482d2e6345b6c598e1d78a7a34b8235288fae59f928f820e69badaf98fa15ff1ae53a7a9d158f5c323a3bdef2227f0138c1e2fe701d2d152905f48301c3b83e130dd");
+        bnTrustedModulus.SetHex("c7bb01b3201315a4a6aa15baf498b773e9b30d8ca1abc3247786a5bde3bf67b890614a1b665ea3ccd186e6432df03732756efee433cd762ad1d6d9a69c710ea0f34e2151bcf870ac50e4d58af5e7d9304540b387c67ba662b32b12b214d6283622aea85c0756c4edffbf57ec999bc0cf3587e8697c9fc4810b5ed280bc0bab063e34fd607c617fb863d45dfb85aa6619126240fef50402cc6ab1230ff8b14e7ce057a808194de4021bdca2cb39d2844384ba5a4f36c4f8b03ba21640f20bb5db7ff1dde47c938e308f1f59a6819e30303ae6c0cde20ae6288471c13359f66796d08b54150fc68df2fbfab5ab99ef27241423eccc2f5c3e1a966107a041674534b54aeaa23558975a613154a783f64f8d018a9a96442482527c418f918cd19beda76f16e7a6a022d5709f4d097833488cc208bed9d151d17ef83955cd28402d713202686fad80b7fdb0104653e46c90523f815ea995b8d129a9c781636165e4d64f2dcd8baadbdbd0757cecfabb688a3c354049a5b07a6f4f639b748edd158111");
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 1 bit PoW target limit for testnet
         nStakeMinAge = 60; // test net min age
         nCoinbaseMaturity = 10; // test maturity is 30 blocks
     }
     else
     {
-        bnTrustedModulus.SetHex("db36c560d3c006b250bd1f966ada42bca5f648c1865a76d0f20996b0ea9cc243a43d46305929cc77c4381e3eb11dea3627d32322e2f04df35a094c06dcba7b6b19af5be903be76c156661ca9d83c69a8db9281296713fe6e20393ea527a5a2cd5743d8a4e004344ad5fba4095634d084af0a077e205679f89520af9345a0167be935a77add6682e55ab506f64c72a7559ef77bb7b72d6b9ac5646c2c5efad66f2bd6150c15251260812cd2bcfe96d32dfc17c710604240912beb96cfeece138003e1788891ad7d166afd21c753fdbe5e5f2ca963c510b8fd050ac6ddcfd0eafb5f13c667d75d274b27958931dfed5ab36d9b7b33f4ec8c239d3632574bd2036c0cf3b58d6ad0b9d139d068a2d39b2900768f7fe45f1c871ed92dd49d4ce36046d5294914e7a1755bcc391fb09f3b858a60da95a75064ac0d0cbd1dea452599d0f64843bf86c56ea6f2c6c6ba8a703dbefaf7c3b720fc18b04031c8827e4545dfc5e5c82b0ea81c60355d303662d0b7d242cb527a022c63c2949f4c360cbbeb45");
+        bnTrustedModulus.SetHex("c7bb01b3201315a4a6aa15baf498b773e9b30d8ca1abc3247786a5bde3bf67b890614a1b665ea3ccd186e6432df03732756efee433cd762ad1d6d9a69c710ea0f34e2151bcf870ac50e4d58af5e7d9304540b387c67ba662b32b12b214d6283622aea85c0756c4edffbf57ec999bc0cf3587e8697c9fc4810b5ed280bc0bab063e34fd607c617fb863d45dfb85aa6619126240fef50402cc6ab1230ff8b14e7ce057a808194de4021bdca2cb39d2844384ba5a4f36c4f8b03ba21640f20bb5db7ff1dde47c938e308f1f59a6819e30303ae6c0cde20ae6288471c13359f66796d08b54150fc68df2fbfab5ab99ef27241423eccc2f5c3e1a966107a041674534b54aeaa23558975a613154a783f64f8d018a9a96442482527c418f918cd19beda76f16e7a6a022d5709f4d097833488cc208bed9d151d17ef83955cd28402d713202686fad80b7fdb0104653e46c90523f815ea995b8d129a9c781636165e4d64f2dcd8baadbdbd0757cecfabb688a3c354049a5b07a6f4f639b748edd158111");
     }
 
 #if 0
@@ -2728,14 +2729,14 @@ bool LoadBlockIndex(bool fAllowNew)
 
         // Genesis block
 
-        // block.GetHash() == 7286972be4dbc1463d256049b7471c252e6557e222cab9be73181d359cd28bcc
-        // block.hashMerkleRoot == 203fd13214321a12b01c0d8b32c780977cf52e56ae35b7383cd389c73291aee7
-        // block.nTime = 1500674579
-        // block.nNonce = 8485
+        // block.GetHash() == 0x45a4643aadcbb343c52b8baf9e983a77fe6e389f6bfb657d5205e6c5844d89a1
+        // block.hashMerkleRoot == 0x02efe083038f1d9a58d40dda18f6a6cdef365ef7f02d8ff0ecf6eddc7ba218ab 
+        // block.nTime = 1528805596
+        // block.nNonce = 4
 
-        const char* pszTimestamp = "21jul2017 - Neblio First Net Launches";
+        const char* pszTimestamp = "12 June 2018 LuxuryCoin Main network launch";
         CTransaction txNew;
-        txNew.nTime = 1500674579;
+        txNew.nTime = 1528805596;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2745,9 +2746,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1500674579;
+        block.nTime    = 1528805596;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 8485 : 8485;
+        block.nNonce   = !fTestNet ? 4 : 4;
 
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2773,7 +2774,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        assert(block.hashMerkleRoot == uint256("0x203fd13214321a12b01c0d8b32c780977cf52e56ae35b7383cd389c73291aee7"));
+        assert(block.hashMerkleRoot == uint256("0x02efe083038f1d9a58d40dda18f6a6cdef365ef7f02d8ff0ecf6eddc7ba218ab"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 

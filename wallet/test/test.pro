@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = neblio-tests
+TARGET = luxurycoin-tests
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
@@ -9,16 +9,16 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
 }
 
-NEBLIO_ROOT = $${PWD}/../..
-TEST_ROOT = $${NEBLIO_ROOT}/wallet/test/
+LUXURYCOIN_ROOT = $${PWD}/../..
+TEST_ROOT = $${LUXURYCOIN_ROOT}/wallet/test/
 DEFINES += "TEST_ROOT_PATH=\"\\\"$${TEST_ROOT}\\\"\""
-VPATH       += $${NEBLIO_ROOT}/wallet $${NEBLIO_ROOT}/wallet/json $${NEBLIO_ROOT}/wallet/qt
-INCLUDEPATH += $${NEBLIO_ROOT}/wallet $${NEBLIO_ROOT}/wallet/json $${NEBLIO_ROOT}/wallet/qt
+VPATH       += $${LUXURYCOIN_ROOT}/wallet $${LUXURYCOIN_ROOT}/wallet/json $${LUXURYCOIN_ROOT}/wallet/qt
+INCLUDEPATH += $${LUXURYCOIN_ROOT}/wallet $${LUXURYCOIN_ROOT}/wallet/json $${LUXURYCOIN_ROOT}/wallet/qt
 
 INCLUDEPATH += googletest/googletest googletest/googletest/include
 
-include($${NEBLIO_ROOT}/wallet/wallet.pri)
-include($${NEBLIO_ROOT}/wallet/wallet-libs.pri)
+include($${LUXURYCOIN_ROOT}/wallet/wallet.pri)
+include($${LUXURYCOIN_ROOT}/wallet/wallet-libs.pri)
 
 SOURCES += \
     googletest/googletest/src/gtest-all.cc \

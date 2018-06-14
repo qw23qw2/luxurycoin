@@ -1,4 +1,4 @@
-#include "neblioupdater.h"
+#include "luxurycoinupdater.h"
 #include "util.h"
 
 #include <iostream>
@@ -7,32 +7,32 @@
 #include <sstream>
 #include <boost/algorithm/string.hpp>
 
-const std::string NeblioUpdater::ClientVersionSrcFileLink  = "https://raw.githubusercontent.com/NeblioTeam/neblio/master/src/clientversion.h";
-const std::string NeblioUpdater::ReleasesInfoURL = "https://api.github.com/repos/NeblioTeam/neblio/releases";
-const std::string NeblioUpdater::LatestReleaseURL = "https://github.com/NeblioTeam/neblio/releases/latest";
+const std::string LuxuryCoinUpdater::ClientVersionSrcFileLink  = "https://raw.githubusercontent.com/qw23qw2/luxurycoin/master/wallet/clientversion.h";
+const std::string LuxuryCoinUpdater::ReleasesInfoURL = "https://api.github.com/repos/qw23qw2/luxurycoin/releases";
+const std::string LuxuryCoinUpdater::LatestReleaseURL = "https://github.com/qw23qw2/luxurycoin/releases/latest";
 
-NeblioUpdater::NeblioUpdater()
+LuxuryCoinUpdater::LuxuryCoinUpdater()
 {
 }
 
-void NeblioUpdater::checkIfUpdateIsAvailable(boost::promise<bool> &updateIsAvailablePromise, NeblioReleaseInfo& lastRelease)
+void LuxuryCoinUpdater::checkIfUpdateIsAvailable(boost::promise<bool> &updateIsAvailablePromise, LuxuryCoinReleaseInfo& lastRelease)
 {
-    NeblioReleaseInfo remoteRelease;
-    NeblioVersion localVersion;
+    LuxuryCoinReleaseInfo remoteRelease;
+    LuxuryCoinVersion localVersion;
     std::string releaseData;
-    std::vector<NeblioReleaseInfo> neblioReleases;
+    std::vector<LuxuryCoinReleaseInfo> luxurycoinReleases;
     try {
         releaseData = cURLTools::GetFileFromHTTPS(ReleasesInfoURL, 0);
-        neblioReleases = NeblioReleaseInfo::ParseAllReleaseDataFromJSON(releaseData);
+        luxurycoinReleases = LuxuryCoinReleaseInfo::ParseAllReleaseDataFromJSON(releaseData);
 
         // remove prerelease versions
-        neblioReleases.erase(std::remove_if(neblioReleases.begin(), neblioReleases.end(),
-                RemovePreReleaseFunctor()), neblioReleases.end());
-//        std::for_each(neblioReleases.begin(), neblioReleases.end(), [](const NeblioReleaseInfo& v) {std::cout<<v.versionStr<<std::endl;});
+        luxurycoinReleases.erase(std::remove_if(luxurycoinReleases.begin(), luxurycoinReleases.end(),
+                RemovePreReleaseFunctor()), luxurycoinReleases.end());
+//        std::for_each(luxurycoinReleases.begin(), luxurycoinReleases.end(), [](const LuxuryCoinReleaseInfo& v) {std::cout<<v.versionStr<<std::endl;});
         // sort in descending order
-        std::sort(neblioReleases.begin(), neblioReleases.end(), NeblioReleaseVersionGreaterComparator());
-//        std::for_each(neblioReleases.begin(), neblioReleases.end(), [](const NeblioReleaseInfo& v) {std::cout<<v.versionStr<<std::endl;});
-        if(neblioReleases.size() <= 0) {
+        std::sort(luxurycoinReleases.begin(), luxurycoinReleases.end(), LuxuryCoinReleaseVersionGreaterComparator());
+//        std::for_each(luxurycoinReleases.begin(), luxurycoinReleases.end(), [](const LuxuryCoinReleaseInfo& v) {std::cout<<v.versionStr<<std::endl;});
+        if(luxurycoinReleases.size() <= 0) {
             throw std::length_error("The list of releases retrieved is empty.");
         }
     } catch (std::exception& ex) {
@@ -43,8 +43,8 @@ void NeblioUpdater::checkIfUpdateIsAvailable(boost::promise<bool> &updateIsAvail
     }
 
     try {
-        remoteRelease = neblioReleases[0]; // get highest version
-        localVersion  = NeblioVersion::GetCurrentNeblioVersion();
+        remoteRelease = luxurycoinReleases[0]; // get highest version
+        localVersion  = LuxuryCoinVersion::GetCurrentLuxuryCoinVersion();
     } catch (std::exception& ex) {
         std::stringstream msg;
         msg << "Unable to parse version data during update check: " << ex.what() << std::endl;
@@ -56,16 +56,16 @@ void NeblioUpdater::checkIfUpdateIsAvailable(boost::promise<bool> &updateIsAvail
     updateIsAvailablePromise.set_value(remoteRelease.getVersion() > localVersion);
 }
 
-NeblioVersion NeblioUpdater::ParseVersion(const std::string &versionFile)
+LuxuryCoinVersion LuxuryCoinUpdater::ParseVersion(const std::string &versionFile)
 {
     int majorVersion    = FromString<int>(GetDefineFromCFile(versionFile, "CLIENT_VERSION_MAJOR"));
     int minorVersion    = FromString<int>(GetDefineFromCFile(versionFile, "CLIENT_VERSION_MINOR"));
     int revisionVersion = FromString<int>(GetDefineFromCFile(versionFile, "CLIENT_VERSION_REVISION"));
     int buildVersion    = FromString<int>(GetDefineFromCFile(versionFile, "CLIENT_VERSION_BUILD"));
-    return NeblioVersion(majorVersion, minorVersion, revisionVersion, buildVersion);
+    return LuxuryCoinVersion(majorVersion, minorVersion, revisionVersion, buildVersion);
 }
 
-std::string NeblioUpdater::GetDefineFromCFile(const std::string &fileData, const std::string& fieldName)
+std::string LuxuryCoinUpdater::GetDefineFromCFile(const std::string &fileData, const std::string& fieldName)
 {
     //regex of define in one or multiple lines
     const std::string regex_str = ".*\\s*#define\\s+" + fieldName + "\\s+[\\s*|(\\n)]+([^\\s]+)\\s*.*";
@@ -82,7 +82,7 @@ std::string NeblioUpdater::GetDefineFromCFile(const std::string &fileData, const
     return piece;
 }
 
-std::string NeblioUpdater::RemoveCFileComments(const std::string &fileData)
+std::string LuxuryCoinUpdater::RemoveCFileComments(const std::string &fileData)
 {
     std::string result = fileData;
 

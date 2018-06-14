@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About neblio</source>
-        <translation>Om neblio</translation>
+        <source>About luxurycoin</source>
+        <translation>Om luxurycoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;neblio&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;neblio&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;luxurycoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;luxurycoin&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Neblio developers</source>
+Copyright © 2017 The LuxuryCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,7 +63,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your neblio addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your luxurycoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Dette er adressene for å motta betalinger. Du ønsker kanskje å gi ulike adresser til hver avsender så du lettere kan holde øye med hvem som betaler deg.</translation>
     </message>
     <message>
@@ -78,8 +78,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a neblio address</source>
-        <translation>Signer en melding for å bevise din egen neblio adresse.</translation>
+        <source>Sign a message to prove you own a luxurycoin address</source>
+        <translation>Signer en melding for å bevise din egen luxurycoin adresse.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +93,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified neblio address</source>
-        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk neblio adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified luxurycoin address</source>
+        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk luxurycoin adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,7 +261,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-58"/>
-        <source>neblio will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
+        <source>luxurycoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -375,8 +375,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about neblio</source>
-        <translation>Vis info om neblio</translation>
+        <source>Show information about luxurycoin</source>
+        <translation>Vis info om luxurycoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,13 +425,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-62"/>
-        <source>Send tokens to a neblio address</source>
-        <translation>Send tokens til en neblio adresse</translation>
+        <source>Send tokens to a luxurycoin address</source>
+        <translation>Send tokens til en luxurycoin adresse</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for neblio</source>
-        <translation>Endre innstillingene til neblio</translation>
+        <source>Modify configuration options for luxurycoin</source>
+        <translation>Endre innstillingene til luxurycoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -470,8 +470,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-200"/>
-        <source>neblio</source>
-        <translation>neblio</translation>
+        <source>luxurycoin</source>
+        <translation>luxurycoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -480,8 +480,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About neblio</source>
-        <translation>&amp;Om neblio</translation>
+        <source>&amp;About luxurycoin</source>
+        <translation>&amp;Om luxurycoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -537,13 +537,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>neblio client</source>
-        <translation>neblio klient</translation>
+        <source>luxurycoin client</source>
+        <translation>luxurycoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to neblio network</source>
-        <translation><numerusform>%n aktiv tilkobling til neblio nettverket</numerusform><numerusform>%n aktive tilkoblinger til neblio nettverket</numerusform></translation>
+        <source>%n active connection(s) to luxurycoin network</source>
+        <translation><numerusform>%n aktiv tilkobling til luxurycoin nettverket</numerusform><numerusform>%n aktive tilkoblinger til luxurycoin nettverket</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -657,7 +657,7 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid neblio address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid luxurycoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -717,7 +717,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. neblio can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. luxurycoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1039,8 +1039,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid neblio address.</source>
-        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig neblio adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid luxurycoin address.</source>
+        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig luxurycoin adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1058,8 +1058,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>neblio-Qt</source>
-        <translation>neblio-Qt</translation>
+        <source>luxurycoin-Qt</source>
+        <translation>luxurycoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1131,13 +1131,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start neblio after logging in to the system.</source>
+        <source>Automatically start luxurycoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start neblio on system login</source>
-        <translation>&amp;Start neblio ved innlogging</translation>
+        <source>&amp;Start luxurycoin on system login</source>
+        <translation>&amp;Start luxurycoin ved innlogging</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1156,7 +1156,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the neblio client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the luxurycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1166,7 +1166,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the neblio network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the luxurycoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,7 +1241,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting neblio.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting luxurycoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1256,7 +1256,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show neblio addresses in the transaction list or not.</source>
+        <source>Whether to show luxurycoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1303,7 +1303,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting neblio.</source>
+        <source>This setting will take effect after restarting luxurycoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1322,7 +1322,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the neblio network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the luxurycoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1538,7 +1538,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the neblio-Qt help message to get a list with possible neblio command-line options.</source>
+        <source>Show the luxurycoin-Qt help message to get a list with possible luxurycoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1558,12 +1558,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>neblio - Debug window</source>
+        <source>luxurycoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>neblio Core</source>
+        <source>luxurycoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,7 +1573,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the neblio debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the luxurycoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1583,7 +1583,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the neblio RPC console.</source>
+        <source>Welcome to the luxurycoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1742,7 +1742,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1842,8 +1842,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid neblio address</source>
-        <translation>ADVARSEL: Ugyldig neblio adresse</translation>
+        <source>WARNING: Invalid luxurycoin address</source>
+        <translation>ADVARSEL: Ugyldig luxurycoin adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1916,7 +1916,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1977,7 +1977,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this neblio address</source>
+        <source>Sign the message to prove you own this luxurycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2009,7 +2009,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified neblio address</source>
+        <source>Verify the message to ensure it was signed with the specified luxurycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2020,7 +2020,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2030,7 +2030,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter neblio signature</source>
+        <source>Enter luxurycoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2601,8 +2601,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>neblio version</source>
-        <translation>neblio versjon</translation>
+        <source>luxurycoin version</source>
+        <translation>luxurycoin versjon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2611,7 +2611,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nebliod</source>
+        <source>Send command to -server or luxurycoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2631,12 +2631,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: neblio.conf)</source>
+        <source>Specify configuration file (default: luxurycoin.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nebliod.pid)</source>
+        <source>Specify pid file (default: luxurycoind.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2661,7 +2661,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 6325 or testnet: 16325)</source>
+        <source>Listen for connections on &lt;port&gt; (default: 7539 or testnet: 17539)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2721,7 +2721,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 6326 or testnet: 16326)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 7538 or testnet: 17538)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2786,7 +2786,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong neblio will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong luxurycoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2975,13 +2975,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=nebliorpc
+rpcuser=luxurycoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;luxurycoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3102,13 +3102,13 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  neblio is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  luxurycoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>neblio</source>
-        <translation>neblio</translation>
+        <source>luxurycoin</source>
+        <translation>luxurycoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3142,12 +3142,12 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of neblio</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of luxurycoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart neblio to complete</source>
+        <source>Wallet needed to be rewritten: restart luxurycoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3217,7 +3217,7 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. neblio is probably already running.</source>
+        <source>Unable to bind to %s on this computer. luxurycoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -1,14 +1,14 @@
-#ifndef NEBLIOUPDATEDIALOG_H
-#define NEBLIOUPDATEDIALOG_H
+#ifndef LUXURYCOINUPDATEDIALOG_H
+#define LUXURYCOINUPDATEDIALOG_H
 
 #include <QDialog>
 #include <QTextBrowser>
 #include <QGridLayout>
 #include <QLabel>
 
-#include "neblioupdater.h"
+#include "luxurycoinupdater.h"
 
-class NeblioUpdateDialog : public QDialog
+class LuxuryCoinUpdateDialog : public QDialog
 {
     Q_OBJECT
 
@@ -26,13 +26,13 @@ class NeblioUpdateDialog : public QDialog
     void setDownloadLink(const QString& link);
 
 public:
-    explicit NeblioUpdateDialog(QWidget *parent = 0);
+    explicit LuxuryCoinUpdateDialog(QWidget *parent = 0);
 
-    void setUpdateRelease(const NeblioReleaseInfo &rel);
+    void setUpdateRelease(const LuxuryCoinReleaseInfo &rel);
 
 signals:
 
 public slots:
 };
 
-#endif // NEBLIOUPDATEDIALOG_H
+#endif // LUXURYCOINUPDATEDIALOG_H

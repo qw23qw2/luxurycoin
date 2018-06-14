@@ -1,6 +1,6 @@
-#include "neblioupdatedialog.h"
+#include "luxurycoinupdatedialog.h"
 
-NeblioUpdateDialog::NeblioUpdateDialog(QWidget *parent) : QDialog(parent)
+LuxuryCoinUpdateDialog::LuxuryCoinUpdateDialog(QWidget *parent) : QDialog(parent)
 {
     mainLayout = new QGridLayout(this);
     updateInfoText = new QTextBrowser(this);
@@ -32,22 +32,22 @@ NeblioUpdateDialog::NeblioUpdateDialog(QWidget *parent) : QDialog(parent)
     this->setStyleSheet("QDialog { background-color: white;border:none; font-family:'Open Sans,sans-serif'; }");
 }
 
-void NeblioUpdateDialog::setRemoteVersion(const QString &version)
+void LuxuryCoinUpdateDialog::setRemoteVersion(const QString &version)
 {
     remoteVesionContentLabel->setText(version);
 }
 
-void NeblioUpdateDialog::setCurrentVersion(const QString &version)
+void LuxuryCoinUpdateDialog::setCurrentVersion(const QString &version)
 {
     currentVersionContentLabel->setText(version);
 }
 
-void NeblioUpdateDialog::setBodyText(const QString &bodyText)
+void LuxuryCoinUpdateDialog::setBodyText(const QString &bodyText)
 {
     updateInfoText->setText(bodyText);
 }
 
-void NeblioUpdateDialog::setDownloadLink(const QString &link)
+void LuxuryCoinUpdateDialog::setDownloadLink(const QString &link)
 {
     QString text = QString("<a href=\"") + link + "/\">Click Here to go visit the download page</a>";
     downloadLinkLabel->setText(text);
@@ -56,10 +56,10 @@ void NeblioUpdateDialog::setDownloadLink(const QString &link)
     downloadLinkLabel->setOpenExternalLinks(true);
 }
 
-void NeblioUpdateDialog::setUpdateRelease(const NeblioReleaseInfo& rel)
+void LuxuryCoinUpdateDialog::setUpdateRelease(const LuxuryCoinReleaseInfo& rel)
 {
-    this->setCurrentVersion(QString::fromStdString(NeblioVersion::GetCurrentNeblioVersion().toString()));
+    this->setCurrentVersion(QString::fromStdString(LuxuryCoinVersion::GetCurrentLuxuryCoinVersion().toString()));
     this->setRemoteVersion(QString::fromStdString(rel.getVersion().toString()));
     this->setBodyText(QString::fromStdString(rel.getUpdateDescription()));
-    this->setDownloadLink(QString::fromStdString(NeblioUpdater::LatestReleaseURL));
+    this->setDownloadLink(QString::fromStdString(LuxuryCoinUpdater::LatestReleaseURL));
 }

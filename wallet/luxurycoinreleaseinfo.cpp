@@ -1,16 +1,16 @@
-#include "neblioreleaseinfo.h"
+#include "luxurycoinreleaseinfo.h"
 
 #include "boost/algorithm/string.hpp"
 #include "util.h"
 
-NeblioReleaseInfo::NeblioReleaseInfo()
+LuxuryCoinReleaseInfo::LuxuryCoinReleaseInfo()
 {
     this->clear();
 }
 
-NeblioReleaseInfo NeblioReleaseInfo::ParseSingleReleaseData(const json_spirit::Object &data)
+LuxuryCoinReleaseInfo LuxuryCoinReleaseInfo::ParseSingleReleaseData(const json_spirit::Object &data)
 {
-    NeblioReleaseInfo release;
+    LuxuryCoinReleaseInfo release;
     release.versionStr  = GetStrField(data, "tag_name");
     release.htmlURL = GetStrField(data, "html_url");
     release.isPreRelease = GetBoolField(data, "prerelease");
@@ -19,28 +19,28 @@ NeblioReleaseInfo NeblioReleaseInfo::ParseSingleReleaseData(const json_spirit::O
     return release;
 }
 
-std::string NeblioReleaseInfo::GetStrField(const json_spirit::Object &data, const std::string &fieldName)
+std::string LuxuryCoinReleaseInfo::GetStrField(const json_spirit::Object &data, const std::string &fieldName)
 {
     json_spirit::Value val;
     val = json_spirit::find_value(data, fieldName);
     return val.get_str();
 }
 
-bool NeblioReleaseInfo::GetBoolField(const json_spirit::Object &data, const std::string &fieldName)
+bool LuxuryCoinReleaseInfo::GetBoolField(const json_spirit::Object &data, const std::string &fieldName)
 {
     json_spirit::Value val;
     val = json_spirit::find_value(data, fieldName);
     return val.get_bool();
 }
 
-std::vector<NeblioReleaseInfo> NeblioReleaseInfo::ParseAllReleaseDataFromJSON(const std::string &data)
+std::vector<LuxuryCoinReleaseInfo> LuxuryCoinReleaseInfo::ParseAllReleaseDataFromJSON(const std::string &data)
 {
     json_spirit::Value value;
     json_spirit::read_or_throw(data, value);
     json_spirit::Array array = value.get_array();
-    std::vector<NeblioReleaseInfo> releases;
+    std::vector<LuxuryCoinReleaseInfo> releases;
     for(long i = 0; i < static_cast<long>(array.size()); i++) {
-        NeblioReleaseInfo rel;
+        LuxuryCoinReleaseInfo rel;
         try {
             rel = ParseSingleReleaseData(array[i].get_obj());
         } catch(std::exception& ex) {
@@ -52,27 +52,27 @@ std::vector<NeblioReleaseInfo> NeblioReleaseInfo::ParseAllReleaseDataFromJSON(co
     return releases;
 }
 
-bool NeblioReleaseInfo::getIsPreRelease() const
+bool LuxuryCoinReleaseInfo::getIsPreRelease() const
 {
     return isPreRelease;
 }
 
-NeblioVersion NeblioReleaseInfo::getVersion() const
+LuxuryCoinVersion LuxuryCoinReleaseInfo::getVersion() const
 {
     return version;
 }
 
-std::string NeblioReleaseInfo::getUpdateDescription() const
+std::string LuxuryCoinReleaseInfo::getUpdateDescription() const
 {
     return bodyText;
 }
 
-std::string NeblioReleaseInfo::getDownloadLink() const
+std::string LuxuryCoinReleaseInfo::getDownloadLink() const
 {
     return htmlURL;
 }
 
-void NeblioReleaseInfo::clear()
+void LuxuryCoinReleaseInfo::clear()
 {
     versionStr.clear();
     version.clear();
@@ -80,7 +80,7 @@ void NeblioReleaseInfo::clear()
     isPreRelease = false;
 }
 
-NeblioVersion NeblioReleaseInfo::VersionTagStrToObj(std::string VersionStr)
+LuxuryCoinVersion LuxuryCoinReleaseInfo::VersionTagStrToObj(std::string VersionStr)
 {
     // remove the "v" from the tag
     boost::replace_all(VersionStr, "v", "");
@@ -94,7 +94,7 @@ NeblioVersion NeblioReleaseInfo::VersionTagStrToObj(std::string VersionStr)
     } else {
         throw std::length_error("Splitting the version and beta parts of the version string has led to a zero sized vector. Unable to parse " + VersionStr);
     }
-    NeblioVersion version(0, 0, 0, 0);
+    LuxuryCoinVersion version(0, 0, 0, 0);
 
     // get the beta part of the version (that comes after the "-")
     if(versionAndBetaParts.size() > 1) {

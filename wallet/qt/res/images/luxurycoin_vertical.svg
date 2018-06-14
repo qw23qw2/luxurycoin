@@ -16,10 +16,10 @@
    viewBox="0 0 650 760"
    xml:space="preserve"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="neblio_vertical.svg"
+   sodipodi:docname="luxurycoin_vertical.svg"
    width="650"
    height="760"
-   inkscape:export-filename="/home/samer/neblio/neblio/src/qt/res/images/neblio_vertical.png"
+   inkscape:export-filename="/home/samer/luxurycoin/luxurycoin/src/qt/res/images/luxurycoin_vertical.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180"><metadata
      id="metadata3467"><rdf:RDF><cc:Work
@@ -201,5 +201,5 @@
      id="text3461"
      x="7.7161484"
      y="734.17432"
-     style="font-size:205.53450012px;font-family:MyriadPro-Regular;fill:#373737">neblio</text>
+     style="font-size:205.53450012px;font-family:MyriadPro-Regular;fill:#373737">luxurycoin</text>
 </svg>

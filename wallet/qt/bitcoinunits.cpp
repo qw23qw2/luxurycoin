@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("NEBL");
-    case mBTC: return QString("mNEBL");
-    case uBTC: return QString::fromUtf8("μNEBL");
+    case BTC: return QString("TLK");
+    case mBTC: return QString("mTLK");
+    case uBTC: return QString::fromUtf8("μTLK");
     default: return QString("???");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("NEBL");
-    case mBTC: return QString("Milli-NEBL (1 / 1,000)");
-    case uBTC: return QString("Micro-NEBL (1 / 1,000,000)");
+    case BTC: return QString("TLK");
+    case mBTC: return QString("Milli-TLK (1 / 1,000)");
+    case uBTC: return QString("Micro-TLK (1 / 1,000,000)");
     default: return QString("???");
     }
 }

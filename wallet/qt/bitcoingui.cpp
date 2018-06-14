@@ -78,7 +78,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0),
     nWeight(0)
 {
-    setWindowTitle(tr("neblio") + " - " + tr("Wallet"));
+    setWindowTitle(tr("luxurycoin") + " - " + tr("Wallet"));
     qApp->setStyleSheet("QMainWindow { background-color: white;border:none;font-family:'Open Sans,sans-serif'; } QStatusBar::item { border: 0px;}");
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
@@ -145,7 +145,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     animationStopperTimerTimeout = 2*60*1000; //stop animations in 2 minutes
     setupUpdateControls();
     updateCheckTimer->start(updateCheckTimerTimeout);
-    checkForNeblioUpdates();
+    checkForLuxuryCoinUpdates();
 
     // backup alert timers
     backupCheckerTimer = new QTimer(this);
@@ -269,7 +269,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send tokens"), this);
-    sendCoinsAction->setToolTip(tr("Send tokens to a neblio address"));
+    sendCoinsAction->setToolTip(tr("Send tokens to a luxurycoin address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -307,14 +307,14 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About neblio"), this);
-    aboutAction->setToolTip(tr("Show information about neblio"));
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About luxurycoin"), this);
+    aboutAction->setToolTip(tr("Show information about luxurycoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/icons/about_qt"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for neblio"));
+    optionsAction->setToolTip(tr("Modify configuration options for luxurycoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -422,7 +422,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if(trayIcon)
             {
-                trayIcon->setToolTip(tr("neblio client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("luxurycoin client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
 
@@ -484,7 +484,7 @@ void BitcoinGUI::createTrayIcon()
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
 
-    trayIcon->setToolTip(tr("neblio client"));
+    trayIcon->setToolTip(tr("luxurycoin client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     trayIcon->show();
 #endif
@@ -569,7 +569,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to neblio network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to luxurycoin network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -875,7 +875,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid neblio address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid luxurycoin address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -890,7 +890,7 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid neblio address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid luxurycoin address or malformed URI parameters."));
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)
@@ -956,7 +956,7 @@ void BitcoinGUI::backupWallet()
     if (pwalletMain->IsLocked()) {
         QMessageBox::StandardButton answer;
         answer = QMessageBox::question(this, "Wallet is still locked!",
-                                       tr("Unlocking your wallet will help Neblio Wallet notify you when the next backup is necessary. Are you sure you want to keep the wallet locked before the backup process?"),
+                                       tr("Unlocking your wallet will help LuxuryCoin Wallet notify you when the next backup is necessary. Are you sure you want to keep the wallet locked before the backup process?"),
                                        QMessageBox::Yes | QMessageBox::No | QMessageBox::Cancel);
         if (answer == QMessageBox::No) {
             backupWallet();
@@ -1161,7 +1161,7 @@ void BitcoinGUI::updateCheckAnimation_frameChanged(int frameNumber) {
     }
 }
 
-void BitcoinGUI::checkForNeblioUpdates()
+void BitcoinGUI::checkForLuxuryCoinUpdates()
 {
     if(!isUpdateRunning) {
         printf("Checking for updates...\n");
@@ -1171,8 +1171,8 @@ void BitcoinGUI::checkForNeblioUpdates()
         latestRelease.clear();
         updateAvailablePromise = boost::promise<bool>();
         updateAvailableFuture = updateAvailablePromise.get_future();
-        boost::thread updaterThread(boost::bind(&NeblioUpdater::checkIfUpdateIsAvailable,
-                                    &neblioUpdater,
+        boost::thread updaterThread(boost::bind(&LuxuryCoinUpdater::checkIfUpdateIsAvailable,
+                                    &luxurycoinUpdater,
                                     boost::ref(updateAvailablePromise),
                                     boost::ref(latestRelease)
                                     ));
@@ -1182,7 +1182,7 @@ void BitcoinGUI::checkForNeblioUpdates()
     }
 }
 
-void BitcoinGUI::finishCheckForNeblioUpdates()
+void BitcoinGUI::finishCheckForLuxuryCoinUpdates()
 {
     if(isUpdateRunning && updateAvailableFuture.is_ready()) {
         printf("Concluding update check...\n");
@@ -1191,13 +1191,13 @@ void BitcoinGUI::finishCheckForNeblioUpdates()
             if(updateAvailable) {
                 updaterLabel->setMovie(updaterUpdateExistsMovie);
                 updaterUpdateExistsMovie->start();
-                updaterLabel->setToolTip("A new neblio wallet version exists! Please click here for release notes and a download link");
+                updaterLabel->setToolTip("A new luxurycoin wallet version exists! Please click here for release notes and a download link");
 
                 // change the action of clicking on the update icon to show the dialog
                 disconnect(updaterLabel, &ClickableLabel::clicked,
-                        this, &BitcoinGUI::checkForNeblioUpdates);
+                        this, &BitcoinGUI::checkForLuxuryCoinUpdates);
                 connect(updaterLabel, &ClickableLabel::clicked,
-                        updateDialog, &NeblioUpdateDialog::show);
+                        updateDialog, &LuxuryCoinUpdateDialog::show);
 
                 updateDialog->setUpdateRelease(latestRelease);
                 animationStopperTimer->start(animationStopperTimerTimeout);
@@ -1207,7 +1207,7 @@ void BitcoinGUI::finishCheckForNeblioUpdates()
             } else {
                 updaterLabel->setMovie(updaterCheckMovie);
                 updaterCheckMovie->start();
-                updaterLabel->setToolTip("Your Neblio wallet application is up-to-date.");
+                updaterLabel->setToolTip("Your LuxuryCoin wallet application is up-to-date.");
             }
         } catch (std::exception& ex) {
             updaterLabel->setMovie(updaterErrorMovie);
@@ -1287,19 +1287,19 @@ void BitcoinGUI::setupUpdateControls()
 
     updaterSpinnerMovie = new QMovie(":images/update-spinner", QByteArray(), this->statusBar());
 
-    updateDialog = new NeblioUpdateDialog(this);
+    updateDialog = new LuxuryCoinUpdateDialog(this);
 
     connect(updaterCheckMovie, &QMovie::frameChanged,
             this, &BitcoinGUI::updateCheckAnimation_frameChanged);
 
     connect(updaterLabel, &ClickableLabel::clicked,
-            this, &BitcoinGUI::checkForNeblioUpdates);
+            this, &BitcoinGUI::checkForLuxuryCoinUpdates);
 
     connect(updateConcluderTimer, &QTimer::timeout,
-            this, &BitcoinGUI::finishCheckForNeblioUpdates);
+            this, &BitcoinGUI::finishCheckForLuxuryCoinUpdates);
 
     connect(updateCheckTimer, &QTimer::timeout,
-            this, &BitcoinGUI::checkForNeblioUpdates);
+            this, &BitcoinGUI::checkForLuxuryCoinUpdates);
 
     connect(animationStopperTimer, &QTimer::timeout,
             this, &BitcoinGUI::stopAnimations);

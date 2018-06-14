@@ -1,10 +1,30 @@
-#General Introduction of Neblio
-Neblio is a secure and energy efficient PoS Token on which the Neblio Platform is built
-https://nebl.io
+# General Introduction of LuxuryCoin
 
-#Neblio Specification
+LuxuryCoin is a secure and energy efficient PoS Token on which the LuxuryCoin Platform is built
 
-~13,000,000 Tokens In cirulation after token sale
-Proof-of-Stake Token
+http://the-luxury.ae
+
+
+## LuxuryCoin Specification
+
+| Header	  		| Value		|
+| ----------------------------- | ------------- |
+| Coin type			| POW+POS	|
+| Algo				| Scrypt	|
+| Symbol	 		| TLK           |
+| Block time			| 120 seconds	|
+| Recalculated difficulty	| Every Blocck	|
+| Last POW block		| 50		|
+| Initail Coin Supply		| 100.000.000   |
+| Transaction confirmation	| 30 blocks	|
+| P2P Port			| 7539		|
+| P2P Testen Port		| 17539         |
+| RPC Port			| 7538          |
+| Testnet RPC Port 		| 17538         |
+| Minimum Coin Age		| 24 hours	|
+| Maximum Coin Age		| 7 days	|
+| PoS Annual Interest		| 12%		|
+
+
 
 

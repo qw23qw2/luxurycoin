@@ -5,19 +5,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About neblio</source>
-        <translation>Über neblio</translation>
+        <source>About luxurycoin</source>
+        <translation>Über luxurycoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;neblio&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;neblio&lt;/b&gt; Version</translation>
+        <source>&lt;b&gt;luxurycoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;luxurycoin&lt;/b&gt; Version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Neblio developers</source>
+Copyright © 2017 The LuxuryCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -35,19 +35,19 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
 <context>
     <message>
            <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About neblio</source>
-        <translation>Über neblio</translation>
+        <source>About luxurycoin</source>
+        <translation>Über luxurycoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;neblio&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;neblio&lt;/b&gt; Version</translation>
+        <source>&lt;b&gt;luxurycoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;luxurycoin&lt;/b&gt; Version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2017 The Neblio developers</source>
+Copyright © 2017 The LuxuryCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -95,8 +95,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your neblio addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Das sind Ihre neblio Adressen, um Zahlungen zu erhalten. Sie können jedem Sender eine andere Adresse geben, um besser nachvollziehen zu können, von wem Sie Zahlungen erhalten.</translation>
+        <source>These are your luxurycoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Das sind Ihre luxurycoin Adressen, um Zahlungen zu erhalten. Sie können jedem Sender eine andere Adresse geben, um besser nachvollziehen zu können, von wem Sie Zahlungen erhalten.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -110,8 +110,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a neblio address</source>
-        <translation>Eine nachricht signieren, um zu beweisen, dass Sie eine neblio Adresse besitzen</translation>
+        <source>Sign a message to prove you own a luxurycoin address</source>
+        <translation>Eine nachricht signieren, um zu beweisen, dass Sie eine luxurycoin Adresse besitzen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -125,8 +125,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified neblio address</source>
-        <translation>Eine Nachricht verifizieren, um sicherzustellen, dass sie mit einer bestimmten neblio Adresse signiert wurde</translation>
+        <source>Verify a message to ensure it was signed with a specified luxurycoin address</source>
+        <translation>Eine Nachricht verifizieren, um sicherzustellen, dass sie mit einer bestimmten luxurycoin Adresse signiert wurde</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -293,8 +293,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-58"/>
-        <source>neblio will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
-          <translation>Neblio wird beendet, um den Verschlüsselungsprozess fertigzustellen. WARNUNG! Auch eine verschlüsselte Wallet kann Ihre Tokens nicht gänzlich davor schützen, durch auf Ihrem Computer installierte Schadsoftware gestohlen zu werden </translation>
+        <source>luxurycoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tokens from being stolen by malware infecting your computer.</source>
+          <translation>LuxuryCoin wird beendet, um den Verschlüsselungsprozess fertigzustellen. WARNUNG! Auch eine verschlüsselte Wallet kann Ihre Tokens nicht gänzlich davor schützen, durch auf Ihrem Computer installierte Schadsoftware gestohlen zu werden </translation>
     </message>
     <message>
         <location line="+13"/>
@@ -407,8 +407,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about neblio</source>
-        <translation>Informationen über neblio anzeigen</translation>
+        <source>Show information about luxurycoin</source>
+        <translation>Informationen über luxurycoin anzeigen</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -457,13 +457,13 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-62"/>
-        <source>Send tokens to a neblio address</source>
-        <translation>Token an eine neblio Adresse senden</translation>
+        <source>Send tokens to a luxurycoin address</source>
+        <translation>Token an eine luxurycoin Adresse senden</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for neblio</source>
-        <translation>neblio Konfiguration anpassen</translation>
+        <source>Modify configuration options for luxurycoin</source>
+        <translation>luxurycoin Konfiguration anpassen</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -502,7 +502,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-200"/>
-        <source>neblio</source>
+        <source>luxurycoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -512,8 +512,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About neblio</source>
-        <translation>&amp;Über neblio</translation>
+        <source>&amp;About luxurycoin</source>
+        <translation>&amp;Über luxurycoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -569,13 +569,13 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>neblio client</source>
-        <translation>neblio Client</translation>
+        <source>luxurycoin client</source>
+        <translation>luxurycoin Client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to neblio network</source>
-        <translation><numerusform>%n aktive Verbindung zum neblio-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum neblio-Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to luxurycoin network</source>
+        <translation><numerusform>%n aktive Verbindung zum luxurycoin-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum luxurycoin-Netzwerk</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -688,8 +688,8 @@ Adresse: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid neblio address or malformed URI parameters.</source>
-        <translation>URI kann nicht geparsed werden! Dies kann an einer ungültigen neblio Adresse oder falschen URI Parametern liegen</translation>
+        <source>URI can not be parsed! This can be caused by an invalid luxurycoin address or malformed URI parameters.</source>
+        <translation>URI kann nicht geparsed werden! Dies kann an einer ungültigen luxurycoin Adresse oder falschen URI Parametern liegen</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -748,8 +748,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. neblio can no longer continue safely and will quit.</source>
-        <translation>Ein schwerwiegender Fehler ist aufgetreten. neblio kann nicht mehr sicher ausgeführt werden und wird beendet</translation>
+        <source>A fatal error occurred. luxurycoin can no longer continue safely and will quit.</source>
+        <translation>Ein schwerwiegender Fehler ist aufgetreten. luxurycoin kann nicht mehr sicher ausgeführt werden und wird beendet</translation>
     </message>
 </context>
 <context>
@@ -1082,8 +1082,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid neblio address.</source>
-        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige neblio Adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid luxurycoin address.</source>
+        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige luxurycoin Adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1101,7 +1101,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>neblio-Qt</source>
+        <source>luxurycoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1174,13 +1174,13 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start neblio after logging in to the system.</source>
-        <translation>Neblio beim Systemstart automatisch starten.</translation>
+        <source>Automatically start luxurycoin after logging in to the system.</source>
+        <translation>LuxuryCoin beim Systemstart automatisch starten.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start neblio on system login</source>
-        <translation>&amp;Starte neblio bei der Benutzeranmeldung</translation>
+        <source>&amp;Start luxurycoin on system login</source>
+        <translation>&amp;Starte luxurycoin bei der Benutzeranmeldung</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1199,8 +1199,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the neblio client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den neblio Client Port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
+        <source>Automatically open the luxurycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisch den luxurycoin Client Port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1209,8 +1209,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the neblio network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Verbindung zum neblio Netzwerk über einen SOCKS Proxy herstellen (z.B. bei Verbindung über Tor).</translation>
+        <source>Connect to the luxurycoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Verbindung zum luxurycoin Netzwerk über einen SOCKS Proxy herstellen (z.B. bei Verbindung über Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1284,7 +1284,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting neblio.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting luxurycoin.</source>
         <translation>Die Sprache der GUI kann hier verändert werden. Die Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -1299,8 +1299,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show neblio addresses in the transaction list or not.</source>
-        <translation>neblio Adressen in der Überweisung anzeigen oder nicht.</translation>
+        <source>Whether to show luxurycoin addresses in the transaction list or not.</source>
+        <translation>luxurycoin Adressen in der Überweisung anzeigen oder nicht.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1346,7 +1346,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting neblio.</source>
+        <source>This setting will take effect after restarting luxurycoin.</source>
         <translation>Diese Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -1365,8 +1365,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the neblio network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information kann falsch sein. Die Wallet synchronisiert automatisch mit dem neblio Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the luxurycoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information kann falsch sein. Die Wallet synchronisiert automatisch mit dem luxurycoin Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1581,8 +1581,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the neblio-Qt help message to get a list with possible neblio command-line options.</source>
-        <translation>Anzeige der neblio-Qt Hilfe, um eine Liste der möglichen Kommandozeilenoptionen zu sehen.</translation>
+        <source>Show the luxurycoin-Qt help message to get a list with possible luxurycoin command-line options.</source>
+        <translation>Anzeige der luxurycoin-Qt Hilfe, um eine Liste der möglichen Kommandozeilenoptionen zu sehen.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1601,13 +1601,13 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="-104"/>
-        <source>neblio - Debug window</source>
-        <translation>neblio - Debug Fenster</translation>
+        <source>luxurycoin - Debug window</source>
+        <translation>luxurycoin - Debug Fenster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>neblio Core</source>
-        <translation>neblio Core</translation>
+        <source>luxurycoin Core</source>
+        <translation>luxurycoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1616,8 +1616,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the neblio debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Die neblio Debug Log-Datei im aktuellen Datenberzeichnis öffnen. Dies kann bei grossen Dateien einige Sekunden dauern</translation>
+        <source>Open the luxurycoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Die luxurycoin Debug Log-Datei im aktuellen Datenberzeichnis öffnen. Dies kann bei grossen Dateien einige Sekunden dauern</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1626,8 +1626,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the neblio RPC console.</source>
-        <translation>Willkommen in der neblio RPC Konsole.</translation>
+        <source>Welcome to the luxurycoin RPC console.</source>
+        <translation>Willkommen in der luxurycoin RPC Konsole.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1785,8 +1785,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Geben Sie eine neblio Adresse ein (z.B. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Geben Sie eine luxurycoin Adresse ein (z.B. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1885,7 +1885,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid neblio address</source>
+        <source>WARNING: Invalid luxurycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1959,7 +1959,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2020,8 +2020,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this neblio address</source>
-        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser neblio Adresse bist.</translation>
+        <source>Sign the message to prove you own this luxurycoin address</source>
+        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser luxurycoin Adresse bist.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2052,7 +2052,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified neblio address</source>
+        <source>Verify the message to ensure it was signed with the specified luxurycoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2063,7 +2063,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a neblio address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a luxurycoin address (e.g. 8dpZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2073,8 +2073,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter neblio signature</source>
-        <translation>neblio Signatur eingeben</translation>
+        <source>Enter luxurycoin signature</source>
+        <translation>luxurycoin Signatur eingeben</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2644,7 +2644,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>neblio version</source>
+        <source>luxurycoin version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2654,8 +2654,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nebliod</source>
-        <translation>Kommando versenden an -server oder nebliod </translation>
+        <source>Send command to -server or luxurycoind</source>
+        <translation>Kommando versenden an -server oder luxurycoind </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2674,13 +2674,13 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: neblio.conf)</source>
-        <translation>Konfigurationsdatei angeben (Standard: neblio.conf)</translation>
+        <source>Specify configuration file (default: luxurycoin.conf)</source>
+        <translation>Konfigurationsdatei angeben (Standard: luxurycoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nebliod.pid)</source>
-        <translation>PID Datei angeben (Standard: neblio.pid)</translation>
+        <source>Specify pid file (default: luxurycoind.pid)</source>
+        <translation>PID Datei angeben (Standard: luxurycoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2704,7 +2704,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 6325 or testnet: 16325)</source>
+        <source>Listen for connections on &lt;port&gt; (default: 7539 or testnet: 17539)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2764,7 +2764,7 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 6326 or testnet: 16326)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 7538 or testnet: 17538)</source>
              <translation type="unfinished"/>
     </message>
     <message>
@@ -2829,8 +2829,8 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong neblio will not work properly.</source>
-        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist neblio nicht richtig funktionieren.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong luxurycoin will not work properly.</source>
+        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist luxurycoin nicht richtig funktionieren.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3018,13 +3018,13 @@ Diese Anzeige wird rot, wenn die Grösse einer Transaktion 10000 byte überschre
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=nebliorpc
+rpcuser=luxurycoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;luxurycoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3145,13 +3145,13 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  neblio is probably already running.</source>
-        <translation>Kann das Verzeichniss nicht einbinden %s. neblio Brieftasche läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s.  luxurycoin is probably already running.</source>
+        <translation>Kann das Verzeichniss nicht einbinden %s. luxurycoin Brieftasche läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>neblio</source>
-        <translation>neblio</translation>
+        <source>luxurycoin</source>
+        <translation>luxurycoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3185,13 +3185,13 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of neblio</source>
-        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der neblio Brieftasche.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of luxurycoin</source>
+        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der luxurycoin Brieftasche.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart neblio to complete</source>
-        <translation>Brieftasche muss neu geschrieben werden. Starte die neblio Brieftasche neu zum komplettieren.</translation>
+        <source>Wallet needed to be rewritten: restart luxurycoin to complete</source>
+        <translation>Brieftasche muss neu geschrieben werden. Starte die luxurycoin Brieftasche neu zum komplettieren.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3260,7 +3260,7 @@ for example: alertnotify=echo %%s | mail -s &quot;neblio Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. neblio is probably already running.</source>
+        <source>Unable to bind to %s on this computer. luxurycoin is probably already running.</source>
         <translation>Fehler beim anbinden %s auf diesem Computer. BlaclCoin Client läuft wahrscheinlich bereits.</translation>
     </message>
     <message>

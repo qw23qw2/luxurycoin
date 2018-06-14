@@ -11,8 +11,8 @@
 
 #include <stdint.h>
 
-#include "neblioupdater.h"
-#include "neblioupdatedialog.h"
+#include "luxurycoinupdater.h"
+#include "luxurycoinupdatedialog.h"
 
 class TransactionTableModel;
 class ClientModel;
@@ -45,8 +45,8 @@ class BitcoinGUI : public QMainWindow
     Q_OBJECT
 
     ClickableLabel *updaterLabel;
-    NeblioUpdater neblioUpdater;
-    NeblioReleaseInfo latestRelease;
+    LuxuryCoinUpdater luxurycoinUpdater;
+    LuxuryCoinReleaseInfo latestRelease;
     boost::promise<bool> updateAvailablePromise;
     boost::unique_future<bool> updateAvailableFuture;
     QTimer* updateConcluderTimer;
@@ -55,7 +55,7 @@ class BitcoinGUI : public QMainWindow
     int updateCheckTimerTimeout;
     QTimer* animationStopperTimer;
     int animationStopperTimerTimeout;
-    NeblioUpdateDialog* updateDialog;
+    LuxuryCoinUpdateDialog* updateDialog;
 
     bool isUpdateRunning; // since update check is asynchronous, this is true while checking is running
     //The following are the images that can show up in the updater
@@ -270,9 +270,9 @@ private slots:
     // Stop the animation after playing once
     void updateCheckAnimation_frameChanged(int frameNumber);
     // This function calls the update check asynchronously
-    void checkForNeblioUpdates();
+    void checkForLuxuryCoinUpdates();
     // Called periodically to asynchronously check if the update process is finished
-    void finishCheckForNeblioUpdates();
+    void finishCheckForLuxuryCoinUpdates();
 
     void stopAnimations();
 

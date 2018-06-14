@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import neblio_ci_libs as nci
+import luxurycoin_ci_libs as nci
 
 build_dir = "wallet"
 

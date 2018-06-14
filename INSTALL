@@ -1,9 +1,9 @@
-Building neblio
+Building luxurycoin
 
-See doc/readme-qt.rst for instructions on building neblio QT,
+See doc/readme-qt.rst for instructions on building luxurycoin QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of neblio.
+implementation of luxurycoin.
 
-See doc/build-*.txt for instructions on building nebliod,
+See doc/build-*.txt for instructions on building luxurycoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of neblio.
+implementation of luxurycoin.

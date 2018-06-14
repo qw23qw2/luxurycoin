@@ -96,7 +96,7 @@ HEADERS += qt/bitcoingui.h \
     qt/bitcoinunits.h \
     qt/qvaluecombobox.h \
     qt/askpassphrasedialog.h \
-    qt/neblioupdatedialog.h \
+    qt/luxurycoinupdatedialog.h \
     protocol.h \
     qt/notificator.h \
     qt/qtipcserver.h \
@@ -108,9 +108,9 @@ HEADERS += qt/bitcoingui.h \
     netbase.h \
     clientversion.h \
     threadsafety.h \
-    neblioupdater.h \
-    neblioversion.h \
-    neblioreleaseinfo.h \
+    luxurycoinupdater.h \
+    luxurycoinversion.h \
+    luxurycoinreleaseinfo.h \
     curltools.h \
     ntp1tools.h \
     qt/messageboxwithtimer.h
@@ -179,7 +179,7 @@ SOURCES += qt/bitcoin.cpp \
     qt/qtipcserver.cpp \
     qt/rpcconsole.cpp \
     qt/ClickableLabel.cpp \
-    qt/neblioupdatedialog.cpp \
+    qt/luxurycoinupdatedialog.cpp \
     qt/messageboxwithtimer.cpp \
     noui.cpp \
     kernel.cpp \
@@ -197,19 +197,19 @@ SOURCES += qt/bitcoin.cpp \
     zerocoin/Params.cpp \
     zerocoin/SerialNumberSignatureOfKnowledge.cpp \
     zerocoin/SpendMetaData.cpp \
-    neblioupdater.cpp \
-    neblioversion.cpp \
+    luxurycoinupdater.cpp \
+    luxurycoinversion.cpp \
     json/json_spirit_value.cpp \
     json/json_spirit_reader.cpp \
     json/json_spirit_writer.cpp \
-    neblioreleaseinfo.cpp \
+    luxurycoinreleaseinfo.cpp \
     zerocoin/ZeroTest.cpp \
     curltools.cpp \
     ntp1tools.cpp
 
-contains(NEBLIO_REST, 1) {
-    HEADERS += nebliorest.h
-    SOURCES += nebliorest.cpp
+contains(LUXURYCOIN_REST, 1) {
+    HEADERS += luxurycoinrest.h
+    SOURCES += luxurycoinrest.cpp
 }
 
 contains(USE_QRCODE, 1) {

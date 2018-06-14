@@ -42,10 +42,10 @@ TEST(accounting_tests, acc_orderupgrade)
             std::cerr << msg;
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            FAIL() << _("Error loading wallet.dat: Wallet requires newer version of neblio") << "\n";
+            FAIL() << _("Error loading wallet.dat: Wallet requires newer version of luxurycoin") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            FAIL() << _("Wallet needed to be rewritten: restart neblio to complete") << "\n";
+            FAIL() << _("Wallet needed to be rewritten: restart luxurycoin to complete") << "\n";
         }
         else
             FAIL() << _("Error loading wallet.dat") << "\n";

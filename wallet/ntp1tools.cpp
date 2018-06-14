@@ -52,7 +52,7 @@ bool NTP1Tools::AddressContainsNTP1Tokens(const std::string& address)
 
 std::string NTP1Tools::GetRestAPIAddressURL(const std::string &address)
 {
-#ifdef NEBLIO_REST
+#ifdef LUXURYCOIN_REST
     return NTPAPIURL_prefix_local + address;
 #else
     return NTPAPIURL_prefix_external + address;

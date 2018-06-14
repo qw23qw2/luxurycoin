@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2017 The Nebl.io developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -370,7 +371,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 
             pszGet = "GET / HTTP/1.1\r\n"
                      "Host: checkip.dyndns.org\r\n"
-                     "User-Agent: neblio\r\n"
+                     "User-Agent: luxurycoin\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -389,7 +390,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 
             pszGet = "GET /simple/ HTTP/1.1\r\n"
                      "Host: www.showmyip.com\r\n"
-                     "User-Agent: neblio\r\n"
+                     "User-Agent: luxurycoin\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -406,7 +407,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("neblio-ext-ip");
+    RenameThread("luxurycoin-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -747,7 +748,7 @@ void SocketSendData(CNode *pnode)
 void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
-    RenameThread("neblio-net");
+    RenameThread("luxurycoin-net");
 
     try
     {
@@ -1076,7 +1077,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("neblio-UPnP");
+    RenameThread("luxurycoin-UPnP");
 
     try
     {
@@ -1141,7 +1142,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "neblio " + FormatFullVersion();
+        string strDesc = "luxurycoin " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1231,13 +1232,13 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"seed", "seed.nebl.io"}
+    {"seed", "seed.the-luxury.ae"}
 };
 
 void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("neblio-dnsseed");
+    RenameThread("luxurycoin-dnsseed");
 
     try
     {
@@ -1331,7 +1332,7 @@ void ThreadDumpAddress2(void* parg)
 void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
-    RenameThread("neblio-adrdump");
+    RenameThread("luxurycoin-adrdump");
 
     try
     {
@@ -1346,7 +1347,7 @@ void ThreadDumpAddress(void* parg)
 void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("neblio-opencon");
+    RenameThread("luxurycoin-opencon");
 
     try
     {
@@ -1526,7 +1527,7 @@ void ThreadOpenConnections2(void* parg)
 void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("neblio-opencon");
+    RenameThread("luxurycoin-opencon");
 
     try
     {
@@ -1657,7 +1658,7 @@ bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOu
 void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
-    RenameThread("neblio-msghand");
+    RenameThread("luxurycoin-msghand");
 
     try
     {
@@ -1823,7 +1824,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. neblio is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. luxurycoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
@@ -1904,7 +1905,7 @@ void static Discover()
 void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
-    RenameThread("neblio-start");
+    RenameThread("luxurycoin-start");
 
     if (semOutbound == NULL) {
         // initialize semaphore
