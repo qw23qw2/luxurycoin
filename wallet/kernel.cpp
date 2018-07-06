@@ -16,14 +16,12 @@ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
         ( 0,   0x0e00670b ) // genesis
         ( 50,  0x416fd0cb ) // premine
-        ( 100, 0x747733c9 ) // end of POW
     ;
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
 static std::map<int, unsigned int> mapStakeModifierCheckpointsTestNet =
     boost::assign::map_list_of
         ( 0,   0x0e00670b ) // genesis
-	( 100, 0x747733c9 ) // end of POW
     ;
 
 // Get time weight
